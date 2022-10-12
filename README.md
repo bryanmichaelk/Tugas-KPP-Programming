@@ -30,7 +30,6 @@ int main() {
     float kecepatanAwal, kecepatanTangensialR, kecepatanAwallLosses;
     std::cin >> kecepatanTangensial;
     kecepatanLoss = speed_dgn_loss(kecepatanTangensial); 
-    
     if (sudut = 45){
         jarak = (pow(kecepatanLoss, 2))/gravitasi;
         kecepatanAwal = sqrt(jarak*gravitasi);
