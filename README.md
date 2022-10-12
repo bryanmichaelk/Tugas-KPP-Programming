@@ -6,9 +6,9 @@
 #include <iostream>
 #include <cmath>
 
-#define GRAVITASI 10 //10 m/s^2
-#define START_PENGUKURAN 1 //pengukuran dimulai dari 1 meter
-#define SUDUT 45 //sudut elevasi tembakan
+#define GRAVITASI 10 
+#define START_PENGUKURAN 1 
+#define SUDUT 45
 int speed_dgn_loss(int kecepatanTangensial)
 {
     int losses, kecepatanAwal;
@@ -26,7 +26,6 @@ int speed_dgn_loss(int kecepatanTangensial)
 }
 
 int main() {
-    /* tulis kode utama kalian disini */
     int kecepatanTangensial, sudut = 45, gravitasi = 10, kecepatanLoss, losses, jarak;
     float kecepatanAwal, kecepatanTangensialR, kecepatanAwallLosses;
     std::cin >> kecepatanTangensial;
@@ -45,9 +44,5 @@ int main() {
     }
     kecepatanTangensialR = kecepatanAwal + losses;
     std::cout << jarak<< " "<< kecepatanTangensialR <<std::endl;
-  	/* input adalah kecepatan tangensial maksimum roller */
-  	/* std::cin >> input */
-  
-  	/* std::cout << jarak << " " << kecepatan tangensial << std::endl */
     return 0;
 }
